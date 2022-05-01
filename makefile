@@ -8,6 +8,6 @@ bootstrap:
 	@pip install -r requirements.txt
 	
 
-run:
+start:
 	@export PYTHONPATH=`pwd`/src; python src/app/data_loader.py
 	@echo "log file location --> loader.log"

@@ -25,7 +25,7 @@ diseaseData = pd.DataFrame()
 
 os.chdir("data/")
 with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
-    logger.info("Stating concurrent Execution")
+    logger.info("Starting Concurrent Data loading")
     evidenceFuture = executor.submit(
         ftpLoader.loadData, EVIDENCE_DIR_NAME, "evidence")
     targetFuture = executor.submit(
